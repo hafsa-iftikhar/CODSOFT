@@ -1,0 +1,32 @@
+.text-center{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: aliceblue;
+  }
+  .bg-black{
+    background-color: #393838;
+    border-radius: 15px
+  }
+  .mx-auto{
+    margin:auto;
+  }
+  .flex{
+    display:flex;
+  }
+  .flex-col{
+    flex-direction: column;
+  }
+
+  .container{
+    width: 450px; /* Increase the width to make the calculator larger */
+  background-color: #383737; /* Updated background color */
+  border-radius: 15px;
+  padding: 20px;
+  color: white; /* Text color for contrast */
+  text-align: center; /* Center the calculator content */
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-right: 20px;
+  }
+  
