@@ -1,0 +1,718 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(b3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+    z-index: -1;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for opacity level */
+    z-index: 1;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    position: relative;
+    background-color: rgb(110, 26, 7);
+    z-index: 10000;
+}
+
+.nav h2{
+    color: aliceblue;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+
+}
+#item{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+#item li{
+    list-style: none;
+    padding-right: 50px;
+}
+#item li a{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+#item li a:hover, #item .icon i:hover{
+    color: #ff5733;
+    cursor: pointer;
+}
+
+
+
+#item .icon i{
+    color: aliceblue;
+    padding-right: 30px;
+    font-weight: bolder;
+}
+
+.mid{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align:left;
+}
+
+.mid p{
+    color: rgb(228, 234, 240);
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1.4rem;
+    font-weight: 600;
+}
+
+.mid h1{
+    color:rgb(255, 250, 250);
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align:left;
+}
+
+.mid .btn{
+    margin-top: 2rem;
+}
+
+.mid .btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.9rem 1.6rem;
+    font-weight: 500;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+
+.mid .btn a.simple{
+    color: aliceblue;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+    cursor: pointer;
+
+}
+
+.mid .btn a.simple:hover{
+    color: #ff5733;
+    cursor: pointer;
+}
+
+
+.mid .btn a.border{
+    color: #ff5733;
+    border: 1px solid #ff5733;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+    border-radius: 3px;
+}
+
+.mid .btn a.border:hover{
+    background: #fff;
+    border: 1px solid #fff;
+}
+
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items:center;
+    padding: 2rem 25rem;
+    height: 155vh;
+}
+
+
+
+
+.details h3,h5,h5{
+    color: #f0f0f0;
+    text-transform: uppercase;
+}
+
+/* Example CSS for .one and .two */
+
+.details .one {
+    padding: 20px;
+    /* background-color:rgba(0, 0, 0, 0.5); */
+    text-align: justify;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.details .one h2 {
+    font-size: 2rem;
+    color: #a1a1a1;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    font-weight: 300%;
+
+}
+
+.details .one h4{
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    color: #fcfcfc;
+    padding-bottom: 1rem;
+    font-weight: 600;
+
+}
+
+.details .one p{
+    text-transform: uppercase;
+    color: #c90d0d;
+    font-weight:600;
+    padding-bottom: 0.3rem; 
+    text-align:left;
+}
+
+
+
+.details .one a {
+    color: #fff;
+    background: #8c2f2f; 
+    padding: 1rem 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.details .one a:hover {
+    background-color: #fff;
+    color: #13fa11;
+    cursor: pointer;
+}
+
+
+
+
+.details .two {
+    /* background-color: #aa4242; */
+    padding: 20px;
+    font-weight: 600;
+    border-left: 1px solid #ffffff;
+    width: 45%;
+
+
+}
+
+.details .two h3 {
+    font-size: 1.3rem;
+    color: #f9f9f9;
+    font-weight: 600;
+}
+
+.details .two h5 {
+    font-weight: 700;
+    color: #ffffff;
+    padding-top: 0.4rem;
+}
+
+.details .two p{
+    padding-top: 0.2rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* Add this CSS to style the semi-transparent boxes */
+
+.box-container {
+    position:absolute;
+    top: 20%;
+    right: 10px;
+    transform: translate(-50%);
+    display: flex; 
+    flex-direction: row; /* Stack the boxes vertically */
+    align-items:flex-end; /* Align the boxes to the right */
+    z-index: 2;
+    gap: 20px;
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+/* Additional styles for each box */
+#box1 {
+    background-color:rgba(134, 122, 122, 0.5);  /* Red */
+    top: 20px;
+    width: 170px;
+    height: 200px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    display: flex;
+    padding-top: 1.0rem;
+    right: 10px;
+    
+}
+
+#box1 img{
+    width:50px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px;    
+}
+
+#box1 h6{
+    font-size: 14px; 
+    color: rgb(246, 244, 244); 
+    margin: 5px 0; 
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+#box1 p {
+    color: white;
+    font-size: 12px; 
+    margin-top: 5px 0;
+    text-align:left;
+    font-weight: 300;
+    padding-top: 1.0;
+    text-transform:capitalize;
+    padding: 1.2rem;
+}
+
+
+#box2 {
+    background-color: rgba(134, 122, 122, 0.5);  /* Red */
+    top: 20px;
+    width: 170px;
+    height: 200px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    display: flex;
+    padding-top: 1.0rem;
+    right: 10px;
+}
+
+#box2 img{
+    width:50px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px; 
+}
+
+#box2 h6{
+    font-size: 14px; 
+    color: rgb(246, 244, 244); 
+    margin: 5px 0; 
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#box2 p {
+    color: white;
+    font-size: 12px; 
+    margin-top: 5px 0;
+    text-align:left;
+    font-weight: 300;
+    padding-top: 1.0;
+    text-transform:capitalize;
+    padding: 1.2rem;
+}
+
+
+
+#box3 {
+    background-color: rgba(134, 122, 122, 0.5); /* Red */
+    top: 20px;
+    width: 170px;
+    height: 200px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    display: flex;
+    padding-top: 1.0rem;
+    right: 10px;
+}
+
+#box3 img{
+    width:50px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px; 
+}
+
+#box3 h6{
+    font-size: 14px; 
+    color: rgb(246, 244, 244); 
+    margin: 5px 0; 
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#box3 p {
+    color: white;
+    font-size: 12px; 
+    margin-top: 5px 0;
+    text-align:left;
+    font-weight: 300;
+    padding-top: 1.0;
+    text-transform:capitalize;
+    padding: 1.2rem;
+}
+
+.trainer{
+    padding: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trainer .about{
+    width: 39%;
+}
+
+.trainer .about h1{
+    color: #ffffff;
+    font-size: 2.1rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.trainer .about p{
+    color: #b9cecf;
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.trainer .people {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trainer .people .team1 {
+    width: 100%; 
+    box-sizing: border-box;
+    background: #fffefe;
+    margin-bottom: 120px; 
+    display: flex;
+    flex-direction: column; /* Make the trainer box content vertical */
+    align-items: center; /* Horizontal alignment in the center */
+    text-align: center;
+    box-shadow:4.5px 4.5px 1.9px rgba(11, 11, 11, 0.014),12.5px 12.5px 5.4px rgba(0, 0, 0, 0.02),30.1px 30.1px 13px rgba(0, 0, 0, 0.026),100px 100px 43px rgba(0, 0, 0, 0.04);
+
+} 
+
+.trainer .people .team1 .img img{
+    width: 120%;
+    max-height: 100%;
+    object-fit: cover; 
+}
+
+
+.trainer .people .team1 .pro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 1rem;
+}
+
+.trainer .people .team1 .name h4 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #060505;
+    margin-bottom: 0.5rem;
+}
+
+
+.trainer .people .team1 .name, .trainer .people .team1 .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #040404;
+}
+
+
+.trainer .people .team1 .name i,.trainer .people .team1 .pro i{
+
+    font-size: 1.0rem;
+    font-weight: bolder;
+    color: #0a0a0a;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.trainer .people .team1 .pro p{
+    padding-top: 0.1rem;
+    font-size: 1rem;
+    color: #121212;
+    line-height: 1.2;
+    text-align: left;
+} 
+
+.class{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 8rem;
+    text-transform: uppercase;
+    height:100vh;
+} 
+
+.class .paragraph{
+    font-size: 1.3rem;
+    color: #f3eaea;
+    padding-bottom: 6px;
+    font-weight: bolder;
+}
+
+.class .h3{
+    font-size: 2.2rem;
+    color: #f0f0f0;
+    padding-bottom: 50px;
+    font-weight:bold;
+    text-align: center;
+}
+
+.class .classmenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.class .classmenu .team1{
+    width: 32%;
+    height: auto;
+    box-sizing: border-box;
+    background: #111111;
+    box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.01),
+    0 4.4px 10px rgba(0,0,0,0.015), 0 10.6px 24.1px rgba(0, 0, 0, 0.02),
+    0 35px 80px rgba(0, 0, 0, 0.03);
+}
+
+.class .classmenu .team1 .img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.class .classmenu .team1 .teamdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.class .classmenu .team1 .teamdetails .name{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px 0 30px;
+}
+
+.class .classmenu .team1 .teamdetails .name .namedetails h4{
+    color: #dbdbdb;
+    font-size: 1.1rem;
+}
+
+.class .classmenu .team1 .teamdetails .name .namedetails p span{
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #dbdbdb;
+}
+
+.class .classmenu .team1 .teamdetails .name .namedetails p {
+    color: #dbdbdb;
+}
+
+
+
+
+.class .classmenu .team1 .teamdetails .name .num h5{
+    font-size: 1rem;
+    background: rgb(231, 14, 14);
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.class .classmenu .team1 .pro{
+    padding: 15px 30px 30px 30px;
+}
+
+.class .classmenu .team1 .pro p{
+    font-size: 1rem;
+    color: #ecd7d7;
+}
+
+.contact{
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact .form{
+    width: 65%;
+    flex-direction: column;
+}
+
+.contact .form h2{
+    font-size: 2rem;
+    color: #f0f0f0;
+    padding-bottom: 2rem;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.contact .form input,
+.contact .form textarea {
+    width: 50%;
+    margin-bottom: 20px; /* Add spacing between form elements */
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contact .form input:hover,
+.contact .form textarea:hover{
+    cursor: pointer;
+}
+
+
+.contact .form a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 6rem;
+}
+
+.contact .form a:hover {
+    background-color: #ff3b1a;
+    cursor: pointer;
+}
+
+.contact .form .submit {
+    width: 15%;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    margin-top: 10px; /* Add margin to separate the button from the map content */
+}
+
+.contact .map {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact .map h2 {
+    font-size: 1.7rem;
+    color: #ede2e2;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    margin: -40px 0 10px;
+}
+
+.contact .map p {
+    margin: -20px 0 10px;
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding-bottom: 1rem;
+    
+}
+
+.contact .map p i {
+    color: red;
+    padding-right: 4px;
+}
+
+.contact .map iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
